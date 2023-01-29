@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container">
+        <section class="character-header">
+        <div class="main-character-card">
+            <div class="character-name-wrap">
+                <div class="character-name-block">
+                    <input class="character-name-input" type="text" placeholder="Имя">
+                </div>
+                <div class="character-class">
+                    <input class="character-name-input" type="text" placeholder="Класс">
+                </div>
+            </div>
+            
+            <div class="character-base-attributes">
+                <div class="character-base-attributes-row-1">
+                    <span class="character-level">
+                        <label>
+                            <input class="character-base-attributes-input" type="text">
+                            Уровень
+                        </label>
+                    </span>
+                    <span class="character-origin">
+                        <label>
+                            <input class="character-base-attributes-input"  type="text">
+                            Происхождение
+                        </label>
+                    </span>
+                    <span class="player-name">
+                        <label>
+                            <input class="character-base-attributes-input"  type="text">
+                            Имя игрока
+                        </label>
+                    </span>
+                </div>
+                <div class="character-base-attributes-row-2">
+                    <span class="character-race">
+                        <label>
+                            <input class="character-base-attributes-input"  type="text">
+                            Расса
+                        </label>
+                    </span>
+                    <span class="character-worldview">
+                        <label>
+                            <input class="character-base-attributes-input"  type="text">
+                            Мировозрение
+                        </label>
+                    </span>
+                    <span class="character-experience">
+                        <label>
+                            <input class="character-base-attributes-input"  type="text">
+                            Опыт
+                        </label>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section class="character-body">
+            <!-- body start -->
+        <div class="character-body-container">
+           <div class="stats-container">
+            <div class="stats-wrap-counter">
+            <div class="stats-wrap">
+            <label>
+                Сила
+            </label>
+            <div class="stat-input-wrap"><input class="stat-input" type="text"></div>
+            </div>
+            <div class="stats-wrap">
+                <label>
+                    Ловкость
+                </label>
+                <div class="stat-input-wrap"><input class="stat-input" type="text"></div>
+            </div>
+            <div class="stats-wrap">
+                <label>
+                    Вынослиовость
+                </label>
+                <div class="stat-input-wrap"><input class="stat-input" type="text"></div>
+            </div>
+            <div class="stats-wrap">
+                <label>
+                    Интелект
+                </label>
+                <div class="stat-input-wrap"><input class="stat-input" type="text"></div>
+            </div>
+            <div class="stats-wrap">
+                <label>
+                    Мудрость
+                </label>
+                <div class="stat-input-wrap"><input class="stat-input" type="text"></div>
+            </div>
+            <div class="stats-wrap">
+                <label>
+                    Харизма
+                </label>
+                <div class="stat-input-wrap"><input class="stat-input" type="text"></div>
+
+            </div>
+           </div>
+           <!-- stats end -->
+           <div class="numeric-stats-wrap">
+            <div class="inspiration-wrap">
+                <div class="inspiration-label">
+                    <label>
+                        <input class="text" class="inspiration-input"><span class="inspitation-decor-elem">Вдохновление</span>
+                    </label>
+                </div>
+                
+                <div class="skill-bonuce-label">
+                    <label >
+                        <input class="text" class="skill-bonuce-input"><span class="skill-bonuce-decor-elem">Бонус Умения</span>
+                    </label>
+                </div>
+            </div>
+            <!-- inspiration end -->
+            <div class="numeric-stats-table-wrap">
+                <div class="numeric-stats-table">
+                    <ul class="numeric-stats-inputs-block">
+                        <li><input class="numeric-stats-input" type="text"> <span class="numeric-stats-title">Сила</span></li>
+                        <li><input class="numeric-stats-input" type="text"> <span class="numeric-stats-title">Ловкость</span></li>
+                        <li><input class="numeric-stats-input" type="text"> <span class="numeric-stats-title">Интелект</span></li>
+                        <li><input class="numeric-stats-input" type="text"> <span class="numeric-stats-title">Мудрость</span></li>
+                        <li><input class="numeric-stats-input" type="text"> <span class="numeric-stats-title">Харизма</span></li>
+    
+                    </ul>
+                </div>
+                <div class="numeric-stats-bottom-title">Испытания</div>
+               </div>
+                 <!-- stats end -->
+               <div class="numeric-skills-table-wrap">
+                <div class="numeric-skills-table">
+                    <ul class="numeric-skills-inputs-block">
+                        <li><input class="numeric-skills-input" type="text"> <span class="numeric-skills-title">Акробатика</span></li>
+                        <li><input class="numeric-skills-input" type="text"> <span class="numeric-skills-title">Атлетика</span></li>
+                        <li><input class="numeric-skills-input" type="text"> <span class="numeric-skills-title">Вниание</span></li>
+                        <li><input class="numeric-skills-input" type="text"> <span class="numeric-skills-title">Выживание</span></li>
+                        <li><input class="numeric-skills-input" type="text"> <span class="numeric-skills-title">Дресировка</span></li>
+                        <li><input class="numeric-skills-input" type="text"> <span class="numeric-skills-title">Запугивание</span></li>
+                        <li><input class="numeric-skills-input" type="text"> <span class="numeric-skills-title">Исполнение</span></li>
+                        <li><input class="numeric-skills-input" type="text"> <span class="numeric-skills-title">История</span></li>
+                        <li><input class="numeric-skills-input" type="text"> <span class="numeric-skills-title">Ловкость рук</span></li>
+                        <li><input class="numeric-skills-input" type="text"> <span class="numeric-skills-title">Магия</span></li>
+                        <li><input class="numeric-skills-input" type="text"> <span class="numeric-skills-title">Медицина</span></li>
+                        <li><input class="numeric-skills-input" type="text"> <span class="numeric-skills-title">Обман</span></li>
+                        <li><input class="numeric-skills-input" type="text"> <span class="numeric-skills-title">Природа</span></li>
+                        <li><input class="numeric-skills-input" type="text"> <span class="numeric-skills-title">Проницательность</span></li>
+                        <li><input class="numeric-skills-input" type="text"> <span class="numeric-skills-title">Расследование</span></li>
+                        <li><input class="numeric-skills-input" type="text"> <span class="numeric-skills-title">Религия</span></li>
+                        <li><input class="numeric-skills-input" type="text"> <span class="numeric-skills-title">Скрытность</span></li>
+                        <li><input class="numeric-skills-input" type="text"> <span class="numeric-skills-title">Убеждение</span></li>
+    
+                    </ul>
+                </div>
+                <div class="skills-bottom-title">Навыки</div>
+               </div>
+                <!-- skills end -->
+           </div> 
+           <div class="passive-wisdom-wrap">
+            <div class="passive-wisdom-label">
+                <label>
+                    <input class="text" class="passive-wisdom-input"><span class="passive-wisdom-decor-elem">Пассивная мудрость</span>
+                </label>
+            </div>
+            </div>
+             <!-- passive-wisdom end -->
+
+            <div class="other-skills-wrap">
+                <div class="other-skills-inputs-wrap">
+                    <input class="other-skills-input" type="text">
+                    <input class="other-skills-input" type="text">
+                    <input class="other-skills-input" type="text">
+                    <input class="other-skills-input" type="text">
+                    <input class="other-skills-input" type="text">
+                    <input class="other-skills-input" type="text">
+                    <input class="other-skills-input" type="text">
+                    <input class="other-skills-input" type="text">
+                    <input class="other-skills-input" type="text">
+                    <input class="other-skills-input" type="text">
+                    <input class="other-skills-input" type="text">
+                </div>
+                <div class="other-skills-bottom-title">Прочие умения и языки</div>
+            </div>
+       </div>
+
+       <div class="armor-attack-container">
+        <div class="combat-stats-wrap"> 
+            <div class="armor-wrap">
+                <div class="combat-input-wrap">
+                    <input class="armor-input" type="text">
+                </div>
+                <div class="combat-title">armor</div>
+            </div>
+            <div class="initiative-wrap">
+                <div class="combat-input-wrap">
+                    <input class="initiative-input" type="text">
+                </div>
+                <div class="combat-title">init</div>
+            </div>
+            <div class="speed-wrap">
+                <div class="combat-input-wrap">
+                    <input class="speed-input" type="text">
+                </div>
+                <div class="combat-title">speed</div>
+            </div>
+        </div>
+        <!-- combat defence end -->
+        <div class="combat-health-wrap">
+            <div class="current-health-container">
+                <div class="maximum-pz-input">Максимум ПЗ <input class="maximum-pz" type="text"></div>
+                <div class="current-health-input-wrap"><input class="current-health-input" type="text"></div>
+                <div class="currnt-helath-title-bottom">Текущие пункты здоровья</div>
+
+            </div>
+        </div>
+         <!-- current health end  -->
+         <div class="combat-tmp-health-wrap">
+            <div class="current-temp-health-container">
+                <div class="tmp-health-input-wrap"><input class="tmp-health-input" type="text"></div>
+                <div class="tpm-helath-title-bottom">Временные пункты здоровья</div>
+
+            </div>
+        </div>
+        <!-- tmp health end  -->
+         <div class="modifer-heath-death-wrap">
+            <div class="modifer-health-wrap">
+                <div class="all-health-modifer-input-wrap">Всего<input class="modifr-health-input-all" type="text"></div>
+                <div class="all-health-modifer-title-bottom">Кости здоровья</div>
+            </div>
+            <div class="death-wrap">
+                <div class="alive-success-wrap">
+                    <ul class="alive-success-block">
+                        <li><span class="alive-title">Успехи</span></li>
+                        <li><input type="checkbox"></li>
+                        <li><input type="checkbox"></li>
+                        <li><input type="checkbox"></li>
+                    </ul>
+                    <ul class="death-success-block">
+                        <li><span class="death-title">Провалы</span></li>
+                        <li><input type="checkbox"></li>
+                        <li><input type="checkbox"></li>
+                        <li><input type="checkbox"></li>
+                    </ul>
+                </div>
+                <div class="alive-success-title-bottom">Испыт. против смерти</div>
+            </div>
+         </div>
+         <!-- death check end  -->
+         <div class="attack-spells-wrap">
+            <div class="attack-spells-table-wrap">
+                <div class="attack-spell-row">
+                    <div class="attack-spell-header-row">
+                        <div class="attack-spell-header-name">Название</div>
+                        <div class="attack-spell-header-bonuce">Бонус атаки</div>
+                        <div class="attack-spell-header-type">Тип урона</div>
+                    </div>
+                    <div class="attack-spell-input-row">
+                        <div class="attack-spell-name"><input class="attack-spell-name-input"></div>
+                        <div class="attack-spell-bonuce"><input class="attack-spell-bonuce-input"></div>
+                        <div class="attack-spell-type"><input class="attack-spell-type-input"></div>
+                    </div>
+                    <div class="attack-spell-input-row">
+                        <div class="attack-spell-name"><input class="attack-spell-name-input"></div>
+                        <div class="attack-spell-bonuce"><input class="attack-spell-bonuce-input"></div>
+                        <div class="attack-spell-type"><input class="attack-spell-type-input"></div>
+                    </div>
+                    <div class="attack-spell-input-row">
+                        <div class="attack-spell-name"><input class="attack-spell-name-input"></div>
+                        <div class="attack-spell-bonuce"><input class="attack-spell-bonuce-input"></div>
+                        <div class="attack-spell-type"><input class="attack-spell-type-input"></div>
+                    </div>
+                    <div class="attack-spell-add-row">
+                        <div class="attack-spell-add-row">
+                            <div class="attack-spell-empty-input-wrap">
+                                <input class="attack-spell-empty-input" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="attack-spell-add-row">
+                        <div class="attack-spell-add-row">
+                            <div class="attack-spell-empty-input-wrap">
+                                <input class="attack-spell-empty-input" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="attack-spell-add-row">
+                        <div class="attack-spell-add-row">
+                            <div class="attack-spell-empty-input-wrap">
+                                <input class="attack-spell-empty-input" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="attack-spell-add-row">
+                        <div class="attack-spell-add-row">
+                            <div class="attack-spell-empty-input-wrap">
+                                <input class="attack-spell-empty-input" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="attack-spell-add-row">
+                        <div class="attack-spell-add-row">
+                            <div class="attack-spell-empty-input-wrap">
+                                <input class="attack-spell-empty-input" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="attack-spell-add-row">
+                        <div class="attack-spell-add-row">
+                            <div class="attack-spell-empty-input-wrap">
+                                <input class="attack-spell-empty-input" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="attack-spell-add-row">
+                        <div class="attack-spell-add-row">
+                            <div class="attack-spell-empty-input-wrap">
+                                <input class="attack-spell-empty-input" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="attack-spell-add-row">
+                        <div class="attack-spell-add-row">
+                            <div class="attack-spell-empty-input-wrap">
+                                <input class="attack-spell-empty-input" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="attack-spell-add-row">
+                        <div class="attack-spell-add-row">
+                            <div class="attack-spell-empty-input-wrap">
+                                <input class="attack-spell-empty-input" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="attack-spell-add-row">
+                        <div class="attack-spell-add-row">
+                            <div class="attack-spell-empty-input-wrap">
+                                <input class="attack-spell-empty-input" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="attack-spell-add-row">
+                        <div class="attack-spell-add-row">
+                            <div class="attack-spell-empty-input-wrap">
+                                <input class="attack-spell-empty-input" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="attack-spell-add-row">
+                        <div class="attack-spell-add-row">
+                            <div class="attack-spell-empty-input-wrap">
+                                <input class="attack-spell-empty-input" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="attack-spell-add-row">
+                        <div class="attack-spell-add-row">
+                            <div class="attack-spell-empty-input-wrap">
+                                <input class="attack-spell-empty-input" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="attack-spell-add-row">
+                        <div class="attack-spell-add-row">
+                            <div class="attack-spell-empty-input-wrap">
+                                <input class="attack-spell-empty-input" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="attack-spell-add-row">
+                        <div class="attack-spell-add-row">
+                            <div class="attack-spell-empty-input-wrap">
+                                <input class="attack-spell-empty-input" type="text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="attack-spell-title-bottom">Атаки и заклинания</div>
+         </div>
+        <!-- spells-end -->
+        <div class="inventory-wrap">
+            <div class="inentory-table-wrap">
+                <div class="inventory-row">
+                    <div class="inventory-item-input-wrap">
+                        <input class="invenentory-item-input">
+                    </div>
+                    <div class="inventory-item-input-wrap">
+                        <input class="invenentory-item-input">
+                    </div>
+                    <div class="inventory-item-input-wrap">
+                        <input class="invenentory-item-input">
+                    </div>
+                    <div class="inventory-item-input-wrap">
+                        <input class="invenentory-item-input">
+                    </div>
+                    <div class="inventory-item-input-wrap">
+                        <input class="invenentory-item-input">
+                    </div>
+                    <div class="inventory-item-input-wrap">
+                        <input class="invenentory-item-input">
+                    </div>
+                    <div class="inventory-item-input-wrap">
+                        <input class="invenentory-item-input">
+                    </div>
+                    <div class="inventory-item-input-wrap">
+                        <input class="invenentory-item-input">
+                    </div>
+                    <div class="inventory-item-input-wrap">
+                        <input class="invenentory-item-input">
+                    </div>
+                    <div class="inventory-item-input-wrap">
+                        <input class="invenentory-item-input">
+                    </div>
+                    <div class="inventory-item-input-wrap">
+                        <input class="invenentory-item-input">
+                    </div>
+                    <div class="inventory-item-input-wrap">
+                        <input class="invenentory-item-input">
+                    </div>
+                    <div class="inventory-item-input-wrap">
+                        <input class="invenentory-item-input">
+                    </div>
+                    <div class="inventory-item-input-wrap">
+                        <input class="invenentory-item-input">
+                    </div>
+                    <div class="inventory-item-input-wrap">
+                        <input class="invenentory-item-input">
+                    </div>
+                    <div class="inventory-item-input-wrap">
+                        <input class="invenentory-item-input">
+                    </div>
+                    <div class="inventory-item-input-wrap">
+                        <input class="invenentory-item-input">
+                    </div>
+                </div>
+            </div>
+            <div class="inventory-title-bottom">Снаряжение</div>
+        </div>
+         <!-- inventory-end -->
+    </div>
+
+    <div class="character-features">
+        <div class="personality-wrap">
+            <div class="personality-input-wrap">
+                <input class="personality-input">
+            </div>
+            <div class="personality-input-wrap">
+                <input class="personality-input">
+            </div>
+            <div class="personality-input-wrap">
+                <input class="personality-input">
+            </div>
+            <div class="personality-input-wrap">
+                <input class="personality-input">
+            </div>
+            <div class="personality-input-wrap">
+                <input class="personality-input">
+            </div>
+            <div class="personality-title-bottom">Свойства Личности</div>
+        </div>
+        <!-- personality-end -->
+        <div class="ideals">
+        <div class="ideals-wrap">
+            <div class="ideals-input-wrap">
+                <input class="ideals-input-input">
+            </div>
+            <div class="ideals-input-wrap">
+                <input class="ideals-input-input">
+            </div>
+            <div class="ideals-input-wrap">
+                <input class="ideals-input-input">
+            </div>
+            <div class="ideals-input-wrap">
+                <input class="ideals-input-input">
+            </div>
+        </div>
+        <div class="ideals-title-bottom">Идеалы</div>
+        </div>
+        <!-- ideals-end -->
+        <div class="bounds-container">
+            <div class="bounds-wrap">
+                <div class="bounds-input-wrap">
+                    <input class="bounds-input">
+                </div>
+                <div class="bounds-input-wrap">
+                    <input class="bounds-input">
+                </div>
+                <div class="bounds-input-wrap">
+                    <input class="bounds-input">
+                </div>
+                <div class="bounds-input-wrap">
+                    <input class="bounds-input">
+                </div>
+            </div>
+        <div class="bounds-title-bottom">Узы</div>
+        </div>
+         <!-- bounds-end -->
+        <div class="flaws-container">
+            <div class="flaws-wrap">
+                <div class="flaws-input-wrap">
+                    <input class="flaws-input">
+                </div>
+                <div class="flaws-input-wrap">
+                    <input class="flaws-input">
+                </div>
+                <div class="flaws-input-wrap">
+                    <input class="flaws-input">
+                </div>
+                <div class="flaws-input-wrap">
+                    <input class="flaws-input">
+                </div>
+            </div>
+        <div class="flaws-title-bottom">Изъяны</div>
+        </div>
+        <!-- flaws-end -->
+        <div class="features-and-properties-container">
+            <div class="features-and-properties-wrap">
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+                <div class="features-and-properties-input-wrap">
+                    <input class="features-and-properties-input">
+                </div>
+            </div>
+        <div class="features-and-properties-title-bottom">Особенности и свойства</div>
+        </div>
+    </div>
+    
+
+</section>
+</div>
+</div>
+    
+</body>
+</html>

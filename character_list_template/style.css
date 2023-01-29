@@ -1,0 +1,590 @@
+body {
+    box-sizing: border-box;
+    max-width: 1170px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    min-width: 1024px;
+    max-width: 1920px;
+    align-items: center;
+}
+
+.main-character-card {
+    display: flex;
+    flex-direction: row;
+}
+.character-name-wrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 40%;
+}
+.character-name-block, .character-class {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 300px;
+}
+.character-base-attributes {
+    display: flex;
+    flex-direction: column;
+    max-width: 65%;
+    align-items: flex-end;
+    width: 65%;
+    border: 1px solid;
+}
+.character-base-attributes-row-1, .character-base-attributes-row-2 {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 65%;
+    min-width: 650px;
+    width: 65%;
+}
+
+.character-base-attributes-row-1 input,  .character-base-attributes-row-2 input{
+    border-width: 0 0 1px;
+    margin: 0 5px 0 0;
+}
+.character-name-input, .character-class-input {
+    max-width: 90%;
+    margin: 10px 5px;
+    min-height: 30px;
+}
+.character-level, 
+.character-origin, 
+.player-name, 
+.character-race, 
+.character-worldview, 
+.character-experience {
+    display: flex;
+    margin: 10px 5px;
+    width: 33%;
+}
+.character-base-attributes-input {
+    max-width: 300px;
+}
+
+.character-body-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.stats-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    min-width: 33%;
+    align-items: flex-start;
+    width: 33%;
+    max-width: 33%;
+}
+.armor-attack-container {
+    align-items: center;
+}
+.character-features {
+    align-items: flex-end;
+}
+.armor-attack-container{
+    display: inline-flex;
+    flex-direction: column;
+    min-width: 33%;
+    max-width: 33%;
+    width: 33%;
+    margin-right: 4.7%
+}
+.character-features {
+    display: inline-flex;
+    flex-direction: column;
+    max-width: 30%;
+    width: 30%;
+    align-items: flex-end;
+}
+
+.stats-wrap-counter {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.stats-wrap {
+    flex-direction: column;
+    display: flex;
+    margin-bottom: 10px;
+    border: 1px solid;
+    max-width: 100px;
+}
+.stats-wrap label  {
+    display: flex;
+    min-height: 75px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+.stat-input-wrap {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.stat-input {
+    width: 25px;
+    border: 1px solid;
+    border-radius: 50%;
+}
+.character-header, .character-body {
+    margin-bottom: 40px;
+    width: 100%;
+    display: flex;
+}
+.numeric-stats-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    max-width: 70%;
+    align-items: flex-start;
+    /* justify-content: center; */
+}
+.inspiration-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.inspiration-label label, .skill-bonuce-label label {
+    display: flex;
+    width: 100%;
+}
+.inspiration-label, .skill-bonuce-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.inspiration-label input, .skill-bonuce-label input {
+    border: 1px solid black;
+    max-width: 50px;
+    width: 50px;
+    display: inline-flex;
+    height: 50px;
+}
+
+.skill-bonuce-label input {
+    width: 50px;
+    border-radius: 50%;
+}
+.inspitation-decor-elem,  .skill-bonuce-decor-elem {
+    border: 1px solid black;
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+.numeric-stats-table-wrap, .numeric-skills-table-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+.numeric-stats-table, .numeric-skills-table {
+    display: flex;
+    justify-content: center;
+}
+.numeric-stats-inputs-block, .numeric-skills-inputs-block {
+    padding: 0;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.numeric-stats-inputs-block li::before, .numeric-skills-inputs-block li::before {
+    content: '◯';
+    margin: 0 5px;
+}
+.numeric-stats-inputs-block li, .numeric-skills-inputs-block li {
+    list-style: none;
+    margin: 5px 0;
+    font-size: 14px;
+}
+.numeric-stats-input, .numeric-skills-input {
+    width: 20px;
+    outline: 0;
+    border-width: 0 0 2px;
+    margin: 0 5px 0 0;
+}
+.numeric-stats-bottom-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+.passive-wisdom-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-height: 65px;
+}
+.passive-wisdom-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    width: 100%;
+}
+.passive-wisdom-label label {
+    display: flex;
+    width: 100%;
+}
+.passive-wisdom-label input {
+    border: 1px solid black;
+    max-width: 50px;
+    width: 50px;
+    display: inline-flex;
+    height: 50px;
+}
+.passive-wisdom-decor-elem {
+    border: 1px solid black;
+    display: inline-flex;
+    justify-content: center;
+    max-width: 70%;
+    width: 100%;
+    align-items: center;
+}
+
+.other-skills-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    border: 1px solid;
+}
+.other-skills-inputs-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 1px;
+}
+.other-skills-input {
+    min-width: 98%;
+    outline: 0;
+    border-width: 0 0 2px;
+    margin: 0 5px 0 0;
+    border: 1px solid;
+    color: lightgrey;
+}
+.other-skills-bottom-title, .skills-bottom-title {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-top: 5px;display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.combat-stats-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 0 20px 0;
+}
+.armor-wrap, .initiative-wrap, .speed-wrap {
+    border: 1px solid;
+    display: flex;
+    min-height: 75px;
+    flex-wrap: wrap;
+    width: 33%;
+    min-height: 90px;
+    min-width: 90px;
+    justify-content: center;
+}
+.armor-wrap {
+    margin-right: 10px;
+}
+.initiative-wrap {
+    margin: 0 10px;
+}
+.speed-wrap {
+    margin-left: 10px;
+}
+.combat-input-wrap {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.combat-input-wrap input, .combat-input-wrap input, .combat-input-wrap input {
+    width: 100%;
+    min-width: 50px;
+    outline: 0;
+    border: none;
+    min-height: 50px;
+}
+.combat-title {
+    display: flex;
+    align-items: end;
+}
+.combat-health-wrap, .combat-tmp-health-wrap {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.current-health-container, .current-temp-health-container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid;
+    min-height: 127px;
+}
+.maximum-pz-input {
+    display: flex;
+    width: 100%;
+    margin: 10px 5px;
+}
+.maximum-pz-input input {
+    width: 70%;
+    margin: 0 0 0 10px;
+    outline: 0;
+    border-width: 0 0 1px;
+}
+.current-health-input-wrap, .tmp-health-input-wrap {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+.current-health-input, .tmp-health-input  {
+    width: 100%;
+    min-height: 30px;
+    outline: 0;
+    border: none;
+}
+.currnt-helath-title-bottom, .tpm-helath-title-bottom {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+}
+.modifer-heath-death-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.modifer-health-wrap, .death-wrap {
+    display: flex;
+    width: 50%;
+    border: 1px solid;
+    min-height: 75px;
+}
+.modifer-health-wrap {
+    display: flex;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.all-health-modifer-input-wrap {
+    display: flex;
+    width: 100%;
+}
+.modifr-health-input-all  {
+    width: 100%;
+    max-height: 15px;
+    margin: 0 10px;
+    outline: 0;
+    border-width: 0 0 1px;
+}
+.all-health-modifer {
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+}
+.all-health-modifer-title-bottom {
+    display: flex;
+    height: 70px;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+}
+.death-wrap {
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.alive-success-wrap, .death-success-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.alive-success-wrap ul {
+    min-height: 25px;
+    width: 90%;
+    margin: 0;
+    padding: 0;
+}
+.alive-success-block, .death-success-block {
+    align-items: center;
+    display: flex;
+    width: 78%;
+    justify-content: flex-end;
+}
+
+.alive-success-block li, .death-success-block li {
+    list-style: none;
+}
+.death-success-block .death-title, .alive-success-block .alive-title {
+    margin: 0 20px 0 0;
+}
+.alive-success-title-bottom {
+    display: flex;
+    align-items: end;
+    width: 100%;
+    justify-content: center;
+}
+.attack-spells-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid;
+    margin-bottom: 20px;
+}
+.attack-spells-table-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.attack-spell-row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.attack-spell-header-row, .attack-spell-input-row, .attack-spell-add-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.attack-spell-name {
+    margin: 5px;
+}
+.attack-spell-bonuce {
+    margin: 5px 0;
+}
+.attack-spell-type {
+    margin: 5px;
+}
+.attack-spell-header-name {
+    display: flex;
+    justify-content: flex-start;
+    width: 33%;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.attack-spell-header-bonuce  {
+    display: flex;
+    justify-content: center;
+    width: 33%;
+    margin-top: 5px;
+}
+.attack-spell-header-type {
+    display: flex;
+    justify-content: flex-end;
+    width: 33%;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.attack-spell-name input, .attack-spell-bonuce input, .attack-spell-type input {
+    width: 94%;
+    min-height: 25px;
+    background-color: lightgray;
+    border:none;
+}
+.attack-spell-title-bottom, .inventory-title-bottom {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+}
+.attack-spell-empty-input-wrap {
+    display: flex;
+    width: 100%;
+}
+.attack-spell-empty-input {
+    width: 100%;
+    border: 1px solid;
+    color: lightgrey;
+}
+.inventory-wrap {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    width: 100%;
+}
+.inentory-table-wrap {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.inventory-row {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.inventory-item-input-wrap {
+    display: flex;
+    width: 100%;
+}
+.invenentory-item-input {
+    width: 100%;
+    border: 1px solid;
+    color: lightgrey;
+}
+.personality-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid;
+    margin-bottom: 20px;
+}
+.personality-input-wrap {
+    display: flex;
+    width: 100%;
+}
+.personality-input-wrap input {
+    width: 100%;
+    border: 1px solid;
+    color: lightgrey;
+    min-height: 15px;
+}
+.personality-title-bottom, .ideals-title-bottom, .bounds-title-bottom, .flaws-title-bottom, .features-and-properties-title-bottom {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+}
+.ideals, .bounds-container, .flaws-container, .features-and-properties-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid;
+    margin-bottom: 20px;
+}
+.ideals-wrap, .bounds-wrap, .flaws-wrap, .features-and-properties-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.ideals-input-wrap, .bounds-input-wrap, .flaws-input-wrap, .features-and-properties-input-wrap{
+    display: flex;
+    width: 100%;
+}
+.ideals-input-wrap input, .bounds-input, .flaws-input, .features-and-properties-input {
+    width: 100%;
+    border: 1px solid;
+    color: lightgrey;
+    min-height: 15px;
+}
