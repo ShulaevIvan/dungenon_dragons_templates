@@ -5,6 +5,9 @@ body {
     padding-right: 16px;
     margin: 0 auto;
 }
+input {
+    all: unset;
+}
 
 .main-container {
     display: flex;
@@ -19,6 +22,7 @@ body {
 .main-character-card {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
 }
 .character-name-wrap {
     display: flex;
@@ -52,11 +56,14 @@ body {
 .character-base-attributes-row-1 input,  .character-base-attributes-row-2 input{
     border-width: 0 0 1px;
     margin: 0 5px 0 0;
+    border-bottom: 1px solid;
 }
 .character-name-input, .character-class-input {
     max-width: 90%;
     margin: 10px 5px;
     min-height: 30px;
+    border-width: 0 0 1px;
+    border-bottom: 1px solid;
 }
 .character-level, 
 .character-origin, 
@@ -138,7 +145,7 @@ body {
     border-radius: 50%;
 }
 .character-header, .character-body {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     width: 100%;
     display: flex;
 }
@@ -226,7 +233,7 @@ body {
     display: flex;
     flex-direction: row;
     width: 100%;
-    max-height: 65px;
+    max-height: 56px;
 }
 .passive-wisdom-label {
     display: flex;
@@ -259,6 +266,7 @@ body {
     flex-wrap: wrap;
     width: 85%;
     border: 1px solid;
+    margin-top: 22px;
 }
 .other-skills-inputs-wrap {
     display: flex;
@@ -267,7 +275,7 @@ body {
     padding: 0 1px;
 }
 .other-skills-input {
-    min-width: 98%;
+    min-width: 100%;
     outline: 0;
     border-width: 0 0 2px;
     margin: 0 5px 0 0;
@@ -337,7 +345,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     border: 1px solid;
-    min-height: 127px;
+    min-height: 126px;
 }
 .maximum-pz-input {
     display: flex;
@@ -372,7 +380,7 @@ body {
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 29px;
 }
 .modifer-health-wrap, .death-wrap {
     display: flex;
@@ -517,6 +525,7 @@ body {
     width: 100%;
     border: 1px solid;
     color: lightgrey;
+    outline: none;
 }
 .inventory-wrap {
     display: flex;
@@ -542,6 +551,7 @@ body {
     width: 100%;
     border: 1px solid;
     color: lightgrey;
+    outline: none;
 }
 .personality-wrap {
     display: flex;
@@ -559,6 +569,7 @@ body {
     border: 1px solid;
     color: lightgrey;
     min-height: 15px;
+    outline: none;
 }
 .personality-title-bottom, .ideals-title-bottom, .bounds-title-bottom, .flaws-title-bottom, .features-and-properties-title-bottom {
     display: flex;
@@ -571,7 +582,7 @@ body {
     flex-direction: column;
     width: 100%;
     border: 1px solid;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 .ideals-wrap, .bounds-wrap, .flaws-wrap, .features-and-properties-wrap {
     display: flex;
@@ -587,4 +598,5 @@ body {
     border: 1px solid;
     color: lightgrey;
     min-height: 15px;
+    outline: none;
 }
