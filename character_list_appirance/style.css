@@ -1,9 +1,11 @@
 body {
+    display: flex;
+    justify-content: center;
     box-sizing: border-box;
-    max-width: 1170px;
     padding-left: 16px;
     padding-right: 16px;
-    margin: 0 auto;
+    width: 100%;
+    overflow-y: scroll;
 }
 input {
     all: unset;
@@ -14,9 +16,8 @@ input {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 100%;
+    width: 1170px;
     min-width: 1024px;
-    max-width: 1920px;
     align-items: center;
 }
 .character-appirance-header-section, .character-appirance-body-section {
@@ -33,7 +34,7 @@ input {
     display: inline-flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 30%;
+    width: 25%;
 }
 .character-name-input-wrap {
     display: flex;
@@ -51,7 +52,7 @@ input {
     padding: 10px;
     border: 1px solid;
     flex-direction: column;
-    width: 66%;
+    width: 64%;
     align-items: flex-end;
 }
 .character-appirance-row-1, .character-appirance-row-2 {
@@ -59,7 +60,7 @@ input {
     flex-wrap: nowrap;
     max-width: 65%;
     min-width: 650px;
-    width: 60%;
+    width: 66%;
 }
 
 .character-appirance-age-input-wrap, .character-appirance-height-input-wrap,
@@ -101,7 +102,7 @@ input {
     width: 66%;
     flex-wrap: wrap;
     margin-bottom: 20px;
-    margin-left: 3.7%;
+    margin-left: 1.7%;
 }
 .appirance-description-area, .history-textarea {
     all:unset;
@@ -173,11 +174,12 @@ input {
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
+    align-items: flex-start;
 }
 .history-wrap {
     display: inline-flex;
     width: 30%;
-    min-height: 400px;
+    min-height: 557px;
     margin-bottom: 20px;
     max-width: 400px;
     border: 1px solid;
@@ -197,11 +199,10 @@ input {
     flex-direction: row;
     max-height: 260px;
     border: 1px solid;
-    max-height: 260px;
     max-width: 65.8%;
     width: 66%;
     margin-bottom: 20px;
-    margin-left: 3.5%;
+    margin-left: 1.5%;
 }
 .other-properties-column-1, .other-properties-column-2 {
     width: 50%;
@@ -219,9 +220,47 @@ input {
     justify-content: center;
     align-items: flex-end;
     max-height: 25px;
+    margin-bottom: 20px;
 }
 .treasure-container {
     display: flex;
     flex-direction: column;
     width: 100%;
+    border: 1px solid;
+}
+.treasure-wrap  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    max-height: 260px;
+}
+.treasuer-column1, .treasuer-column2 {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+.treasure-input-wrap {
+    display: flex;
+    width: 100%;
+}
+.treasure-title-bottom {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    max-height: 25px;
+}
+
+@media print {
+    body {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 90%;
+    overflow-y: scroll;
+    }
 }
