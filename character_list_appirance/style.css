@@ -7,7 +7,8 @@ body {
 }
 input {
     all: unset;
-    border: 1px solid black;
+    border: 1px solid;
+    color: lightgrey;
 }
 .main-container {
     display: flex;
@@ -26,12 +27,13 @@ input {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 .character-name-wrap {
     display: inline-flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 35%;
+    width: 30%;
 }
 .character-name-input-wrap {
     display: flex;
@@ -49,7 +51,7 @@ input {
     padding: 10px;
     border: 1px solid;
     flex-direction: column;
-    width: 60%;
+    width: 66%;
     align-items: flex-end;
 }
 .character-appirance-row-1, .character-appirance-row-2 {
@@ -68,7 +70,6 @@ input {
     margin: 10px 5px;
 }
 
-
 .character-appirance-age-input-wrap input, .character-appirance-height-input-wrap input,
 .character-appirance-weight-input-wrap input, .character-appirance-eyes-input-wrap input,
 .character-appirance-skin-input-wrap input, .character-appirance-hair-input-wrap input {
@@ -84,29 +85,143 @@ input {
 
 .appirance-desciption-container  {
     display: inline-flex;
-    width: 35%;
+    width: 30%;
     min-height: 400px;
+    margin-bottom: 20px;
+    max-width: 400px;
 }
 .appirance-desciption-wrap {
     display: flex;
     flex-wrap: wrap;
-    min-height: 400px;
-    margin-right: 5%;
+    border: 1px solid;
+    margin-bottom: 20px;
 }
 .allies-and-organizations-wrap {
     display: inline-flex;
-    width: 65%;
+    width: 66%;
     flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-left: 3.7%;
 }
-.appirance-description-area {
-    height: 100%;
+.appirance-description-area, .history-textarea {
+    all:unset;
+    border: none;
     width: 100%;
-    border: 1px solid;
+    height: 90%;
 }
 
-.appirance-description-title-bottom {
+.appirance-description-title-bottom, .alies-and-organizations-title-bottom, .history-title-bottom {
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: flex-end;
+}
+
+.alies-and-organizations-content-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 49.5%;
+    border: 1px solid black;
+    border-right: none;
+}
+.alies-and-organizations-symbols-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    border: 1px solid;
+    justify-content: space-between;
+}
+
+.alies-and-organizations-input-wrap input, .other-properties-input {
+    width: 100%;
+}
+.symbols-item {
+    display: flex;
+    border: 1px solid;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 20px;
+    min-height: 300px;
+    align-items: center;
+    
+}
+
+.symbol-input input {
+    width: 100%;
+    margin-bottom: 20px;
+    min-height: 20px;
+}
+.symbol-image {
+    min-height: 150px;
+    margin-bottom: 20px;
+}
+.symbols-control {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.symbols-control .prev-symbol {
+    margin-right: 10px;
+}
+.symbols-control .next-symbol {
+    margin-left: 10px;
+}
+.history-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+.history-wrap {
+    display: inline-flex;
+    width: 30%;
+    min-height: 400px;
+    margin-bottom: 20px;
+    max-width: 400px;
+    border: 1px solid;
+    margin-bottom: 20px;
+}
+
+.history-history-textarea-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 400px;
+    min-width: 360px;
+}
+.other-properties-wrap {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    max-height: 260px;
+    border: 1px solid;
+    max-height: 260px;
+    max-width: 65.8%;
+    width: 66%;
+    margin-bottom: 20px;
+    margin-left: 3.5%;
+}
+.other-properties-column-1, .other-properties-column-2 {
+    width: 50%;
+}
+.other-properties-input-wrap {
+    width: 100%;
+    display: flex;
+}
+.other-properties-input-wrap input{
+    width: 100%;
+}
+.other-properties-title-bottom {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    max-height: 25px;
+}
+.treasure-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
