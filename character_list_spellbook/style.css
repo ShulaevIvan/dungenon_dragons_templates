@@ -1,0 +1,148 @@
+body {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+input {
+    all: unset;
+    border: 1px solid;
+    color: lightgrey;
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 1170px;
+    min-width: 1024px;
+    align-items: center;
+}
+.spellbook-header-section, .spellbook-section {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.spllbook-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+.caster-class {
+    display: flex;
+    width: 30%;
+    justify-content: flex-start;
+    padding: 20px;
+}
+.spell-parameters {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+.spell-parameters label {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 170px;
+    font-size: 16px;
+}
+.caster-class-input-wrap, 
+.caster-characteristic-input, 
+.caster-trials-input, 
+.caster-attack-bonuce-input,
+.caster-class-input {
+    width: 100%;
+    min-height: 40px;
+}
+.caster-characteristic-input-wrap, .caster-trials-input-wrap, .caster-attack-bonuce-wrap {
+    max-width: 33%;
+}
+.caster-characteristic-input-wrap, .caster-trials-input-wrap {
+    margin-right: 5%;
+}
+.spellbook-section {
+    margin-top: 20px;
+}
+.spellbook-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    border: 1px solid lightgrey;
+}
+.spellbook-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.spellbook-block-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid lightgray;
+    width: 29%;
+    padding: 20px;
+    max-width: 33%;
+}
+.spellbook-block-header {
+    align-items: center;
+    position: relative;
+    width: 100%;
+    border: 1px solid lightgrey;
+    display: flex;
+    max-height: 30px;
+    margin-bottom: 15px;
+}
+.spell-level::before {
+    top: -8px;
+    content: '0';
+    position: absolute;
+    left: -122%;
+    
+}
+.spell-level {
+    display: inline-flex;
+    width: 10%;
+    justify-content: flex-start;
+    border-top: 25px solid transparent;
+    border-left: 50px solid lightgray;
+    border-bottom: 25px solid transparent;
+    position:relative;
+    left: -2%;
+    border-radius: 2px;
+}
+.spell-category {
+    left: 13%;
+    position: absolute;
+    width: 77%;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    min-height: 100%;
+
+}
+.spellbook-items-wrap {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.spellbook-item-input-wrap {
+    display: flex;
+    width: 100%;
+}
+.spellbook-item-input {
+    width: 100%;
+    min-height: 25px;
+    /* border-bottom: none; */
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
