@@ -91,6 +91,7 @@ input {
     width: 29%;
     padding: 20px;
     max-width: 33%;
+    flex-direction: column;
 }
 .spellbook-block-header {
     align-items: center;
@@ -98,7 +99,7 @@ input {
     width: 100%;
     border: 1px solid lightgrey;
     display: flex;
-    max-height: 30px;
+    max-height: 40px;
     margin-bottom: 15px;
 }
 .spell-level::before {
@@ -106,9 +107,18 @@ input {
     content: '0';
     position: absolute;
     left: -122%;
-    
 }
-.spell-level {
+
+.spell-level, 
+.spell-level-3, 
+.spell-level-6,
+.spell-level-1,
+.spell-level-4,
+.spell-level-7,
+.spell-level-2,
+.spell-level-5,
+.spell-level-8,
+.spell-level-9 {
     display: inline-flex;
     width: 10%;
     justify-content: flex-start;
@@ -119,6 +129,96 @@ input {
     left: -2%;
     border-radius: 2px;
 }
+
+.spell-level-3::before {
+    top: -8px;
+    content: '3';
+    position: absolute;
+    left: -122%;
+}
+.spell-level-6::before {
+    top: -8px;
+    content: '6';
+    position: absolute;
+    left: -122%;
+}
+.spell-level-1::before {
+    top: -8px;
+    content: '1';
+    position: absolute;
+    left: -122%;  
+}
+.spell-level-4::before {
+    top: -8px;
+    content: '4';
+    position: absolute;
+    left: -122%;  
+}
+.spell-level-7::before {
+    top: -8px;
+    content: '7';
+    position: absolute;
+    left: -122%;  
+}
+
+.spell-level-2::before {
+    top: -8px;
+    content: '2';
+    position: absolute;
+    left: -122%;  
+}
+.spell-level-5::before {
+    top: -8px;
+    content: '5';
+    position: absolute;
+    left: -122%;  
+}
+
+.spell-level-8::before {
+    top: -8px;
+    content: '8';
+    position: absolute;
+    left: -122%;  
+}
+.spell-level-9::before {
+    top: -8px;
+    content: '9';
+    position: absolute;
+    left: -122%;  
+}
+
+.spell-cell-param {
+    position: absolute;
+    width: 74%;
+    display: inline-flex;
+    justify-content: flex-start;
+}
+.spell-cell-all-wrap {
+    display: flex;
+    justify-content: center;
+}
+.spell-cell-current-wrap {
+    display: flex;
+    width: 90%
+}
+.spell-cell-all, .spell-cell-current {
+    max-width: 50%;
+    justify-content: flex-end;
+    padding: 5px;
+    
+}
+.spell-cell-param label {
+    font-size: 12px;
+    max-width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.spell-cell-title {
+    display: flex;
+    margin: 0 5px;
+}
+
 .spell-category {
     left: 13%;
     position: absolute;
@@ -138,10 +238,14 @@ input {
     display: flex;
     width: 100%;
 }
+.spellbook-input-circle:before {
+    content: '◯';
+    font-size: 12px;
+    margin: 0 5px;
+}
 .spellbook-item-input {
     width: 100%;
     min-height: 25px;
-    /* border-bottom: none; */
     border-top: none;
     border-left: none;
     border-right: none;
