@@ -267,7 +267,6 @@ input {
     flex-wrap: wrap;
     width: 85%;
     border: 1px solid;
-    margin-top: 22px;
 }
 .other-skills-inputs-wrap {
     display: flex;
