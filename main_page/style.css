@@ -1,0 +1,56 @@
+body {
+    box-sizing: border-box;
+    max-width: 1170px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+}
+input {
+    all: unset;
+}
+.page-header {
+    width: 100%;
+    max-width: 1350px;
+}
+.menu-wrap {
+    display: flex;
+    width: 100%;
+    max-width: 1350px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid;
+}
+.main-menu-nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+}
+.menu-links {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+}
+.menu-links a {
+    display: flex;
+    justify-content: center;
+    width: 33%;
+}
+.account-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    justify-content: flex-end;
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    min-width: 1024px;
+    max-width: 1920px;
+    align-items: center;
+}
