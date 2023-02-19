@@ -1,16 +1,18 @@
 body {
-    box-sizing: border-box;
-    max-width: 1170px;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin: 0 auto;
+    margin: 0;
 }
+
 input {
     all: unset;
 }
 .page-header {
+    display: flex;
+    align-items: center;
+    background-color:#333;
+    color: white;
+    padding: 10px;
     width: 100%;
-    max-width: 1350px;
+    justify-content: center;
 }
 .menu-wrap {
     display: flex;
@@ -33,6 +35,7 @@ input {
     width: 70%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 .menu-links a {
     display: flex;
@@ -41,8 +44,7 @@ input {
 }
 .account-wrap {
     display: flex;
-    flex-direction: column;
-    width: 25%;
+    width: 15%;
     justify-content: flex-end;
 }
 .main-container {
@@ -50,7 +52,67 @@ input {
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
-    min-width: 1024px;
-    max-width: 1920px;
     align-items: center;
+    box-sizing: border-box;
+    max-width: 1170px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+}
+.account-icon::before {
+    content: url('./img/lk.png');
+    max-width: 50px;
+}
+.footer {
+    margin: 0 auto;
+    padding: 25px;
+    max-width: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.footer-top {
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.footer-bottom {
+    width: 100%;
+}
+.footer-logo-block {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    align-items: flex-start;
+    max-height: 250px;
+}
+.footer-menu-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    align-items: center;
+}
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    max-width: 300px;
+    min-height: 250px;
+    align-items: flex-start;
+}
+.footer-column-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.manual-section {
+    margin-bottom: 20px;
 }
