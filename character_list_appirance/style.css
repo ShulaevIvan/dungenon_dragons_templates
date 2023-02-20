@@ -1,16 +1,134 @@
 body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    flex-direction: column;
+    align-items: center;
     display: flex;
     justify-content: center;
-    box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
-    width: 100%;
-    overflow-y: scroll;
+    margin: 0 auto;
 }
+
 input {
     all: unset;
     border: 1px solid;
     color: lightgrey;
+}
+
+.page-header {
+    display: flex;
+    align-items: center;
+    background-color:#333;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.menu-wrap {
+    display: flex;
+    width: 100%;
+    max-width: 1170px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid;
+}
+.main-menu-nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    min-height: 50px;
+}
+.menu-links {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.menu-links a {
+    display: flex;
+    justify-content: center;
+    width: 33%;
+}
+.account-wrap {
+    display: flex;
+    width: 15%;
+    justify-content: flex-end;
+}
+.account-options {
+    list-style: none;
+    top: 0%;
+    right: 10%;
+    padding: 20px;
+    position: absolute;
+    background-color: #333;
+}
+.account-options li {
+    cursor: pointer;
+}
+.account-options-hidden {
+    display: none;
+}
+
+.account-icon::before {
+    content: url('./img/lk.png');
+    max-width: 50px;
+}
+
+.footer {
+    margin: 0 auto;
+    padding: 25px;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.footer-top {
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1170px;
+}
+.footer-bottom {
+    width: 100%;
+    max-width: 1170px;
+}
+.footer-logo-block {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    align-items: flex-start;
+    max-height: 250px;
+}
+.footer-menu-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    align-items: center;
+}
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    max-width: 300px;
+    min-height: 250px;
+    align-items: flex-start;
+}
+.footer-column-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.footer-link {
+    margin-bottom: 5px;
 }
 .main-container {
     display: flex;
