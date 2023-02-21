@@ -39,8 +39,8 @@ input {
     flex-direction: row;
     width: 100%;
     align-items: center;
-    min-height: 50px;
     max-width: 1170px;
+    min-height: 50px;
 }
 .menu-links {
     max-width: 600px;
@@ -123,6 +123,7 @@ input {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    position: absolute;
     flex: 0 0 auto;
     width: 100%;
 }
@@ -176,96 +177,127 @@ input {
     margin-bottom: 5px;
 }
 
-.manual-section {
-    width: 100%;
-    margin-bottom: 20px;
-}
-.manual-content-wrap {
+.user-panel-wrap {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    width: 100%;
+    min-height: 510px;
 }
-.manual-content {
+.user-characters-wrap {
     display: flex;
     flex-direction: column;
-    width: 75%;
+    width: 50%;
 }
-.manual-content-item {
+.character-preview-wrap  {
     display: flex;
-    width: 90%;
-    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: flex-start;
-}
-.manual-block-link-wrap {
-    display: flex;
-    width: 25%;
-    flex-direction: column;
-}
-.manual-block-link-wrap h3 {
-    font-size: 24px;
-}
-.link-block {
-    max-width: 355px;
-    padding: 20px;
-    background-color: #A3999C;
-    margin-bottom: 20px;
+    width: 50%;
+    justify-content: center;
 }
 
-.popup-login-wrap {
+.character-item {
     display: flex;
-    justify-content: center;
     align-items: center;
-    position: absolute;
-    left: 0;
-    top: 0;
     width: 100%;
-    height: 100%;
-    animation: bg 0.5s ease;
-    background: rgba(173, 168, 168, 0.7);
-}
-.popup-login-body {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 600px;
-    min-height: 300px;
-    background-color: white;
-}
-.login-mail-wrap input, .login-password-wrap input {
-    width: 100%;
-    min-height: 30px;
+    min-height: 100px;
     border: 1px solid;
+    justify-content: flex-end;
 }
-.login-mail-wrap, .login-password-wrap {
-    width: 80%;
-    margin-bottom: 20px;
-}
-.popup-login-btn-block {
-    margin-bottom: 20px;
-}
-.popup-login-btn-wrap {
+.character-item-img  {
     display: flex;
-    width: 100%;
+    justify-content: flex-start;
+    max-width: 100px;
+    max-height: 100px;
 }
-.popup-login-btn-wrap button {
-    min-width: 150px;
-    margin: 0 10px;
-    cursor: pointer;
+.character-item-img img {
+    min-width: 80px;
+    min-height: 80px;
+    max-width: 80px;
+    max-height: 80px;
+    border:1px solid;
+    border-radius: 50%;
 }
-.popup-login-cancel-cross::before {
+.character-item-name {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.character-item-controls {
+    width: 30%;
+    display: flex;
+    margin-right: 10px;
+    justify-content: flex-end;
+}
+.character-item-add::before {
+    content: '\2795';
+    max-height: 18px;
+    font-size: 18px;
+    color: #A3999C;
+}
+.character-item-remove::before {
     content: '\274C';
-    display: flex;
-    top: 5%;
-    position: absolute;
-    right: 3%;
-    font-size: 20px;
-    cursor: pointer;
+    max-height: 18px;
+    font-size: 18px;
+    color: #C14B3C;
 }
-.popup-login-hidden {
+.character-item-add {
+    cursor: pointer;
+    margin-right: 20px;
+}
+.character-item-remove {
+    cursor: pointer;
+    margin-right: 20px;
+}
+.character-preview {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+}
+.character-preview-photo-wrap {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 50%;
+    max-width: 250px;
+}
+.character-preview-base-param {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    max-width: 250px;
+    min-width: 250px;
+    width: 50%;
+    margin-left: 20px;
+}
+.character-preview-photo img {
+    max-width: 200px;
+    min-height: 200px;
+}
+.character-preview-total-info 
+.character-total-name, 
+.character-total-race,
+.character-total-class,
+.character-total-gender,
+.character-total-exp {
+    margin-bottom: 5px;
+}
+.character-preview-stats 
+.strength,
+.dexterity,
+.constitution,
+.inteligence,
+.wisdom,
+.charism {
+    margin-bottom: 5px;
+}
+.character-preview-wrap-hidden {
     display: none;
+}
+.user-info-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-height: 150px;
+    margin-bottom: 20px;
 }
