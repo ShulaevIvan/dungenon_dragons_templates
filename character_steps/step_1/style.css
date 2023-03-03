@@ -275,6 +275,7 @@ input {
     margin-bottom: 10px;
 }
 .character-steps-stats-item {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 28%;
@@ -298,6 +299,20 @@ input {
     justify-content: center;
     align-items: center;
     min-height: 45px;
+}
+.character-stat-item-modif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    bottom: -12px;
+    left: 29%;
+    font-size: 14px;
+    background-color: gray;
+    color: white;
 }
 .character-steps-basic-combat-stats-row {
     display: flex;
@@ -502,8 +517,43 @@ input {
     color: #000;
     position: absolute;
 }
+
+.porgerss-bar-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 .progress-bar-container {
-    width: 95%;
+    width: 68%;
+}
+.progress-bar-nav-wrap {
+    width: 30%;
+    align-items: center;
+    display: flex;
+    justify-content: right;
+}
+.progress-bar-btn-block  {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+.prev-btn-wrap, .next-btn-wrap {
+    display: flex;
+    width: 35%;
+    justify-content: right;
+}
+.prev-btn  {
+    min-width: 120px;
+    min-height: 30px;
+    cursor: pointer;
+}
+.next-btn {
+    min-width: 120px;
+    min-height: 30px;
+    cursor: pointer;
 }
 
 .timeline {
@@ -563,4 +613,36 @@ input {
 	top: 0;
 	margin-top: -10px;
 	transform: translate(-50%, -100%);
+}
+
+.more-race-btn-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.next-step-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+.prev-step-btn-wrap  {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 200px;
+    min-height: 50px;
+}
+.next-step-btn-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 200px;
+    min-height: 50px;
 }

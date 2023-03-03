@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>Step 1</title>
 </head>
 <body>
     <header class="page-header">
@@ -50,28 +50,34 @@
                         <div class="character-steps-stats-item">
                             <div class="character-stat-item-header char-stat-str">STR</div>
                             <div class="character-stat-item-body">1</div>
+                            <div class="character-stat-item-modif">+0</div>
                         </div>
                         <div class="character-steps-stats-item">
                             <div class="character-stat-item-header char-stat-dex">DEX</div>
                             <div class="character-stat-item-body">-</div>
+                            <div class="character-stat-item-modif">+0</div>
                         </div>
                         <div class="character-steps-stats-item">
                             <div class="character-stat-item-header char-stat-con">CON</div>
                             <div class="character-stat-item-body">-</div>
+                            <div class="character-stat-item-modif">+0</div>
                         </div>
                     </div>
                     <div class="character-steps-stats-row">
                         <div class="character-steps-stats-item">
                             <div class="character-stat-item-header char-stat-int">INT</div>
                             <div class="character-stat-item-body">+5</div>
+                            <div class="character-stat-item-modif">+0</div>
                         </div>
                         <div class="character-steps-stats-item">
                             <div class="character-stat-item-header char-stat-wis">WIS</div>
                             <div class="character-stat-item-body">-</div>
+                            <div class="character-stat-item-modif">+0</div>
                         </div>
                         <div class="character-steps-stats-item">
                             <div class="character-stat-item-header char-stat-cha">CHA</div>
                             <div class="character-stat-item-body">-</div>
+                            <div class="character-stat-item-modif">+0</div>
                         </div>
                     </div>
                     
@@ -79,14 +85,17 @@
                         <div class="character-basic-combat-item">
                             <div class="character-basic-combat-item-header char-stat-ac">AC</div>
                             <div class="character-basic-combat-item-body">-</div>
+                            <div class="character-stat-item-modif">+0</div>
                         </div>
                         <div class="character-basic-combat-item">
                             <div class="character-basic-combat-item-header char-stat-init">INIT</div>
                             <div class="character-basic-combat-item-body">-</div>
+                            <div class="character-stat-item-modif">+0</div>
                         </div>
                         <div class="character-basic-combat-item">
                             <div class="character-basic-combat-item-header char-stat-move">MOVE</div>
                             <div class="character-basic-combat-item-body">-</div>
+                            <div class="character-stat-item-modif">+0</div>
                         </div>
                     </div>
 
@@ -176,7 +185,9 @@
                             1 of 4
                         </div>
                     </div>
-
+                </div>
+                <div class="more-race-btn-wrap">
+                    <button class="more-race-btn">load more ...</button>
                 </div>
             </div>
             <!-- race end  -->
@@ -245,17 +256,34 @@
                 </div>
                 <!-- preview end  -->
             </div>
-            <div class="progress-bar-container">
-                <ul class="timeline">
-                    <li data-step="race" class="progress-active-step"></li>
-                    <li data-step="class"></li>
-                    <li data-step="background"></li>
-                    <li data-step="ability"></li>
-                    <li data-step="total"></li>
-                </ul>
+
+            <div class="porgerss-bar-row">
+                <div class="progress-bar-container">
+                    <ul class="timeline">
+                        <li data-step="race" class="progress-active-step"></li>
+                        <li data-step="class"></li>
+                        <li data-step="background"></li>
+                        <li data-step="ability"></li>
+                        <li data-step="total"></li>
+                    </ul>
+                </div>
+                  <!-- progress end  -->
+                <div class="progress-bar-nav-wrap">
+                    <div class="progress-bar-btn-block">
+                        <div class="prev-btn-wrap">
+                            <button class="prev-btn">Prev</button>
+                        </div>
+                        <div class="next-btn-wrap">
+                            <button class="next-btn">next</button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
+            
+
         </div>
+
     </div>
 
     <footer class="footer">
