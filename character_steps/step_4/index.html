@@ -113,7 +113,7 @@
                         </div>
                     </div>
                 </div>
-                </div>
+            </div>
                 <!-- stats end -->
 
                 <div class="character-steps-roll-column">
@@ -139,13 +139,46 @@
                         </div>
                         
                         <div class="character-steps-dice-row">
-                            <div class="character-steps-dice-item"><span class="dice-value">15</span></div>
-                            <div class="character-steps-dice-item"><span class="dice-value">7</span></div>
-                            <div class="character-steps-dice-item"><span class="dice-value">20</span></div>
-                            <div class="character-steps-dice-item"><span class="dice-value">13</span></div>
-                            <div class="character-steps-dice-item"><span class="dice-value">15</span></div>
-                            <div class="character-steps-dice-item"><span class="dice-value">9</span></div>
+                            <div class="character-steps-auto-dice-item">
+                                <div class="character-steps-dice-item">
+                                    <span class="dice-value">15</span>
+                                    <div class="dice-value-modif">+2</div>
+                                </div>
+                            </div>
+                            <div class="character-steps-auto-dice-item">
+                                <div class="character-steps-dice-item">
+                                    <span class="dice-value">7</span>
+                                    <div class="dice-value-modif">-2</div>
+                                </div>
+                            </div>
+                            <div class="character-steps-auto-dice-item">
+                            <div class="character-steps-dice-item">
+                                <span class="dice-value">20</span>
+                                <div class="dice-value-modif">+5</div>
+                            </div>
+                            </div>
+                            <div class="character-steps-auto-dice-item">
+                            <div class="character-steps-dice-item">
+                                <span class="dice-value">13</span>
+                                <div class="dice-value-modif">+1</div>
+                            </div>
+                            </div>
+                            <div class="character-steps-auto-dice-item">
+                            <div class="character-steps-dice-item">
+                                <span class="dice-value">15</span>
+                                <div class="dice-value-modif">+2</div>
+                            </div>
+                            </div>
+                            <div class="character-steps-auto-dice-item">
+                            <div class="character-steps-dice-item">
+                                <span class="dice-value">9</span>
+                                <div class="dice-value-modif">-1</div>
+                            </div>
+                            </div>
                         </div>
+                        <!-- auto dice  end-->
+
+                         
                         <div class="character-steps-result-dice-row">
                             <div class="character-steps-result-dice-item">
                     
@@ -226,6 +259,224 @@
                             <div class="character-steps-dice-btn-roll-save"><button>Запомнить</button></div>
                         </div>
 
+                        <!-- btns dice  end-->
+
+                        <div class="character-steps-dice-wrap">
+                            <div class="character-steps-dice-title">
+                                <h4>Доступные характеристики</h4>
+                            </div>
+                            
+                            <div class="character-steps-dice-row">
+                                <div class="character-steps-hand-dice-item">
+                                    <div class="character-steps-hand-dice-title">
+                                        <h5>STR</h5>
+                                    </div>
+                                    <div class="character-steps-dice-item">
+                                        <span class="dice-value">10</span>
+                                        <div class="dice-value-plus">+</div>
+                                        <div class="dice-value-min">-</div>
+                                        <div class="dice-value-modif">+0</div>
+                                    </div>
+                                    <div class="character-steps-dice-sum-wrap">
+                                        <div class="character-steps-dice-sum">
+                                            <span class="character-steps-dice-value">10 +</span>
+                                            <span class="character-steps-dice-value-bonuce">2</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="character-steps-hand-dice-item">
+                                    <div class="character-steps-hand-dice-title">
+                                        <h5>DEX</h5>
+                                    </div>
+                                    <div class="character-steps-dice-item">
+                                        <span class="dice-value">14</span>
+                                        <div class="dice-value-plus">+</div>
+                                        <div class="dice-value-min">-</div>
+                                        <div class="dice-value-modif">+2</div>
+                                    </div>
+                                    <div class="character-steps-dice-sum-wrap">
+                                        <div class="character-steps-dice-sum">
+                                            <span class="character-steps-dice-value">14 +</span>
+                                            <span class="character-steps-dice-value-bonuce">2</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="character-steps-hand-dice-item">
+                                    <div class="character-steps-hand-dice-title">
+                                        <h5>CON</h5>
+                                    </div>
+                                    <div class="character-steps-dice-item">
+                                        <span class="dice-value">16</span>
+                                        <div class="dice-value-plus">+</div>
+                                        <div class="dice-value-min">-</div>
+                                        <div class="dice-value-modif">+3</div>
+                                    </div>
+                                    <div class="character-steps-dice-sum-wrap">
+                                        <div class="character-steps-dice-sum">
+                                            <span class="character-steps-dice-value">16 +</span>
+                                            <span class="character-steps-dice-value-bonuce">2</span>
+                                        </div>
+                                    </div>
+  
+                                </div>
+                                <div class="character-steps-hand-dice-item">
+                                    <div class="character-steps-hand-dice-title">
+                                        <h5>INT</h5>
+                                    </div>
+                                    <div class="character-steps-dice-item">
+                                        <span class="dice-value">0</span>
+                                        <div class="dice-value-plus">+</div>
+                                        <div class="dice-value-min">-</div>
+                                        <div class="dice-value-modif">+0</div>
+                                    </div>
+                                    <div class="character-steps-dice-sum-wrap">
+                                        <div class="character-steps-dice-sum">
+                                            <span class="character-steps-dice-value">0 +</span>
+                                            <span class="character-steps-dice-value-bonuce">2</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="character-steps-hand-dice-item">
+                                    <div class="character-steps-hand-dice-title">
+                                        <h5>WIS</h5>
+                                    </div>
+                                    <div class="character-steps-dice-item">
+                                        <span class="dice-value">0</span>
+                                        <div class="dice-value-plus">+</div>
+                                        <div class="dice-value-min">-</div>
+                                        <div class="dice-value-modif">+0</div>
+                                    </div>
+                                    <div class="character-steps-dice-sum-wrap">
+                                        <div class="character-steps-dice-sum">
+                                            <span class="character-steps-dice-value">0 +</span>
+                                            <span class="character-steps-dice-value-bonuce">2</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="character-steps-hand-dice-item">
+                                    <div class="character-steps-hand-dice-title">
+                                        <h5>CHA</h5>
+                                    </div>
+                                    <div class="character-steps-dice-item">
+                                        <span class="dice-value">0</span>
+                                        <div class="dice-value-plus">+</div>
+                                        <div class="dice-value-min">-</div>
+                                        <div class="dice-value-modif">+0</div>
+                                    </div>
+                                    <div class="character-steps-dice-sum-wrap">
+                                        <div class="character-steps-dice-sum">
+                                            <span class="character-steps-dice-value">0 +</span>
+                                            <span class="character-steps-dice-value-bonuce">2</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <!-- hand dice  end-->
+
+
+                    </div>
+
+                    <div class="reset-dice-btn-wrap">
+                        <div class="reset-dice-btn"><button>Сбросить все</button></div>
+                    </div>
+
+                </div>
+                <!-- dice  end-->
+
+                <div class="character-bonuce-stats-increase-column">
+                    <div class="character-bonuce-stats-preview-wrap">
+                        <div class="character-bonuce-stats-preview-title">Stats increase</div>
+                        <div class="character-bonuce-stats-preview-subtitle">increase stats str + 2 and other stats +1</div>
+                    </div>
+
+                    <div class="character-bounce-stats-increase-wrap">
+                        <div class="character-bonuce-stat-increase-row">
+                            <div class="character-bonuce-stat-increase-item">
+                                <div class="character-bonuce-stat-increase-title">STR</div>
+                                <div class="character-bonuce-stat-increase-str-input-wrap"><input type="text"></div>
+                                <div class="character-bonuce-stat-increase-btns-wrap">
+                                    <span class="character-bonuce-stat-increase-plus">+</span>
+                                    <span class="character-bonuce-stat-increase-min">-</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="character-bonuce-stat-increase-row">
+                            <div class="character-bonuce-stat-increase-item">
+                                <div class="character-bonuce-stat-increase-title">DEX</div>
+                                <div class="character-bonuce-stat-increase-str-input-wrap"><input type="text"></div>
+                                <div class="character-bonuce-stat-increase-btns-wrap">
+                                    <span class="character-bonuce-stat-increase-plus">+</span>
+                                    <span class="character-bonuce-stat-increase-min">-</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="character-bonuce-stat-increase-row">
+                            <div class="character-bonuce-stat-increase-item">
+                                <div class="character-bonuce-stat-increase-title">CON</div>
+                                <div class="character-bonuce-stat-increase-str-input-wrap"><input type="text"></div>
+                                <div class="character-bonuce-stat-increase-btns-wrap">
+                                    <span class="character-bonuce-stat-increase-plus">+</span>
+                                    <span class="character-bonuce-stat-increase-min">-</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="character-bonuce-stat-increase-row">
+                            <div class="character-bonuce-stat-increase-item">
+                                <div class="character-bonuce-stat-increase-title">INT</div>
+                                <div class="character-bonuce-stat-increase-str-input-wrap"><input type="text"></div>
+                                <div class="character-bonuce-stat-increase-btns-wrap">
+                                    <span class="character-bonuce-stat-increase-plus">+</span>
+                                    <span class="character-bonuce-stat-increase-min">-</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="character-bonuce-stat-increase-row">
+                            <div class="character-bonuce-stat-increase-item">
+                                <div class="character-bonuce-stat-increase-title">WIS</div>
+                                <div class="character-bonuce-stat-increase-str-input-wrap"><input type="text"></div>
+                                <div class="character-bonuce-stat-increase-btns-wrap">
+                                    <span class="character-bonuce-stat-increase-plus">+</span>
+                                    <span class="character-bonuce-stat-increase-min">-</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="character-bonuce-stat-increase-row">
+                            <div class="character-bonuce-stat-increase-item">
+                                <div class="character-bonuce-stat-increase-title">CHA</div>
+                                <div class="character-bonuce-stat-increase-str-input-wrap"><input type="text"></div>
+                                <div class="character-bonuce-stat-increase-btns-wrap">
+                                    <span class="character-bonuce-stat-increase-plus">+</span>
+                                    <span class="character-bonuce-stat-increase-min">-</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="character-bonuce-stat-increase-title-bottom-wrap">
+                            <div class="character-bonuce-stat-increase-title-bottom">
+                                Remaining points 0/2
+                            </div>
+                        </div>
+
+                        <div class="character-bonuce-stat-increase-recomendation-wrap">
+                            <h4>Tip</h4>
+                            <div class="character-bonuce-stat-increase-recomendation-content">
+                                Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
+                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                            </div>
+                        </div>
+
 
                     </div>
 
@@ -241,6 +492,7 @@
                     <li data-step="class"></li>
                     <li data-step="background"></li>
                     <li data-step="stats" class="progress-active-step"></li>
+                    <li data-step="skills"></li>
                     <li data-step="total"></li>
                 </ul>
             </div>
