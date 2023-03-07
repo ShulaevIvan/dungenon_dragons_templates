@@ -41,12 +41,10 @@ input {
     flex-direction: row;
     width: 100%;
     align-items: center;
-    max-width: 1170px;
     min-height: 50px;
 }
 .menu-links {
-    max-width: 600px;
-    width: 70%;
+    width: 75%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -109,7 +107,7 @@ input {
     min-height: 100vh;
     align-items: center;
     box-sizing: border-box;
-    max-width: 1170px;
+    max-width: 1400px;
     padding-left: 16px;
     padding-right: 16px;
     margin: 0 auto;
@@ -118,7 +116,7 @@ input {
 }
 .footer {
     margin: 0 auto;
-    padding: 25px;
+    padding: 10px;
     background-color: #3A2E32;
     color: #C14B3C;
     display: flex;
@@ -178,200 +176,120 @@ input {
 .footer-link {
     margin-bottom: 5px;
 }
-
-.user-panel-wrap {
+.lk-user-main-row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
-    min-height: 510px;
+    margin-bottom: 20px;
 }
-.user-characters-wrap {
+.lk-user-info-column {
     display: flex;
     flex-direction: column;
-    width: 50%;
-}
-.character-preview-wrap  {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    justify-content: center;
+    flex-wrap: wrap;
+    width: 24%;
 }
 
-.character-item {
+.lk-user-characters {
     display: flex;
-    align-items: center;
-    width: 100%;
-    min-height: 100px;
-    border: 1px solid;
-    justify-content: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 45%;
 }
-.character-item-img  {
+.lk-user-characters-row {
+    width: 100%;
     display: flex;
-    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.lk-user-character-item {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 420px;
+    min-height: 50px;
+    border: 1px solid;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.character-item-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+.character-avatar {
+    width: 25%;
+}
+.character-avatar img {
+    min-width: 100px;
     max-width: 100px;
+    min-height: 100px;
     max-height: 100px;
 }
-.character-item-img img {
-    min-width: 80px;
-    min-height: 80px;
-    max-width: 80px;
-    max-height: 80px;
-    border:1px solid;
-    border-radius: 50%;
-}
-.character-item-name {
-    width: 50%;
+.character-name-wrap {
     display: flex;
+    width: 25%;
     justify-content: center;
+    min-width: 150px;
 }
-.character-item-controls {
-    width: 30%;
+.character-control-wrap {
     display: flex;
-    margin-right: 10px;
-    justify-content: flex-end;
+    width: 25%;
+    justify-content: center;
+    min-width: 150px;
 }
-.character-item-add::before {
-    content: '\2795';
-    max-height: 18px;
-    font-size: 18px;
-    color: #A3999C;
+.character-edit-btn {
+    margin-right: 5px;
 }
-.character-item-remove::before {
-    content: '\274C';
-    max-height: 18px;
-    font-size: 18px;
-    color: #C14B3C;
-}
-.character-item-add {
+.character-edit-btn button, .character-remove-btn button {
     cursor: pointer;
-    margin-right: 20px;
 }
-.character-item-remove {
-    cursor: pointer;
-    margin-right: 20px;
-}
-.character-preview {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: flex-end;
-}
-.character-preview-photo-wrap {
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    width: 50%;
-    max-width: 250px;
-}
-.character-preview-base-param {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    max-width: 250px;
-    min-width: 250px;
-    width: 50%;
-    margin-left: 20px;
-}
-.character-preview-photo img {
-    max-width: 200px;
-    min-height: 200px;
-}
-.character-preview-total-info 
-.character-total-name, 
-.character-total-race,
-.character-total-class,
-.character-total-gender,
-.character-total-exp {
-    margin-bottom: 5px;
-}
-.character-preview-stats 
-.strength,
-.dexterity,
-.constitution,
-.inteligence,
-.wisdom,
-.charism {
-    margin-bottom: 5px;
-}
-.character-preview-wrap-hidden {
-    display: none;
-}
-.user-info-wrap {
+
+.lk-user-add-character-row {
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin-bottom: 20px;
 }
-.user-avatar {
-    width: 50%;
+.user-avatar-wrap {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
+    flex-wrap: wrap;
+    align-items: center;
 }
-.user-avatar img {
-    max-width: 120px;
-    max-height: 120px;
-    min-height: 120px;
-    min-width: 120px;
+.user-avatar-wrap img {
+    max-width: 75px;
+    max-height: 75px;
+    min-width: 75px;
+    max-width: 75px;
     border: 1px solid;
     border-radius: 50%;
 }
-.user-name, .user-register-time {
-    margin-bottom: 10px;
-}
-.user-info {
+.user-name-wrap {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    width: 50%;
-}
-.user-friends-wrap{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 50%;
+    width: 100%;
 }
 .user-control-wrap {
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
 }
-.user-control-wrap button {
-    max-width: 150px;
-    min-height: 20px;
-    margin-bottom: 10px;
+.user-control-control-edit-btn, .user-control-exit-btn  {
+    width: 50%;
+    margin-left: 5px;
+}
+.user-control-edit-btn button, .user-control-exit-btn button {
     cursor: pointer;
 }
-.user-friends {
-    width: 100%;
-}
-.user-friend-item {
+.lk-user-character-preview-column {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 29%;
     border: 1px solid;
-    min-height: 25px;
-    margin-bottom: 10px;
-    max-width: 350px;
-}
-.firend-name {
-    display: flex;
-    justify-content: flex-start;
-    width: 50%;
-}
-.user-friend-control {
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 5%;
-}
-.chat-icon, .remove-icon {
-    margin-left: 10px;
-}
-.chat-icon::before {
-    content: '\1F5EA';
-}
-.remove-icon::before {
-    content: '\274C';
-    color: #C14B3C;
+    padding: 5px;
 }

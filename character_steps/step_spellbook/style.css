@@ -444,16 +444,79 @@ input {
     flex-wrap: wrap;
     width: 45%;
 }
+.spellbook-navigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 20px;
+}
 .character-steps-spellbook-row {
     display: flex;
     width: 100%;
 }
+.character-steps-spellbook-inner-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.character-steps-spellbook-inner-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.character-steps-spellbook-item-title {
+    color: #fff;
+}
 .character-steps-spellbook-item {
     display: flex;
-    width: 15.5%;
+    width: 20%;
+    flex: 0 0 auto;
     max-width: 75px;
     min-height: 100px;
     border: 1px solid;
     margin-right: 5px;
     margin-bottom: 5px;
+    cursor: pointer;
+    filter: grayscale();
+    background-image: url('./img/spell.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.character-steps-spellbook-item:hover {
+    filter: none;
+}
+.spell-active {
+    filter: none;
+}
+.character-preview-spells-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 29%;
+    border: 1px solid;
+    padding: 5px;
+}
+.spellbook-navigation-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.btn-level {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    width: 16%;
+    max-width: 25px;
+    min-height: 25px;
+    border: 1px solid;
+    cursor: pointer;
+}
+.spellbook-avalible-spells-level, .spellbook-avalible-spells {
+    margin: 0;
+}
+.spellbook-avalible-spells-level li, .spellbook-avalible-spells li {
+    list-style: none;
 }
