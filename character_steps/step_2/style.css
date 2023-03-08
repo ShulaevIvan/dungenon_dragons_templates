@@ -31,7 +31,7 @@ input {
 .menu-wrap {
     display: flex;
     width: 100%;
-    max-width: 1170px;
+    max-width: 1000px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -44,7 +44,7 @@ input {
     min-height: 50px;
 }
 .menu-links {
-    width: 75%;
+    width: 70%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -72,7 +72,7 @@ input {
     width: 15%;
     max-width: 200px;
     max-height: 50px;
-    justify-content: flex-start;
+    justify-content: center;
 }
 .account-wrap {
     display: flex;

@@ -11,25 +11,20 @@
     <header class="page-header">
         <div class="menu-wrap">
             <nav class="main-menu-nav">
-                <div class="logo-wrap">
-                    <a href="#" class="logo-link">
-                        logo
-                    </a>
-                </div>
                 <div class="menu-links">
-                    <!-- <a href="#">Logo</a> -->
-                    <a href="#" class="menu-btn characters-link">build character</a>
-                    <a href="#" class="menu-btn info-link">info</a>
-                    <a href="#" class="menu-btn info-link">contact</a>
+                    <a href="#" class="logo">Logo</a>
+                    <a href="#" class="logo">Characters</a>
+                    <a href="#" class="logo">info</a>
+                    <a href="#" class="logo">database</a>
                 </div>
-                <div  class="account-wrap">
-                <a href="#"  class="account-icon"></a>
+                <div class="account-wrap">
+                <a href="#" class="account-icon"></a>
                 <ul class="account-options account-options-hidden">
                     <li>Войти</li>
                     <li>Мои персонажи</li>
                     <li>Выйти</li>
                 </ul>
-                </div>
+            </div>
             </nav>
             
         </div>
@@ -43,6 +38,12 @@
                 <div class="user-name-wrap">
                     <h3>User-name</h3>
                 </div>
+                <div class="user-email-wrap">
+                    <h3>email: test@mail.ru</h3>
+                </div>
+                <div class="user-date-wrap">
+                    <h3>date: 23.01.2001</h3>
+                </div>
                 <div class="user-control-wrap">
                     <div class="user-control-edit-btn"><button>edit info</button></div>
                     <div class="user-control-exit-btn"><button>exit</button></div>
@@ -53,7 +54,7 @@
             <div class="lk-user-characters">
                 <div class="lk-user-characters-row">
                     <div class="lk-user-add-character-row">
-                        <button class="add-character-btn">add</button>
+                        <button class="add-character-btn">add new character</button>
                     </div>
                     <div class="lk-user-character-item">
                         <div class="character-item-row">
@@ -120,18 +121,25 @@
 
 
             <div class="lk-user-character-preview-column">
+                <div class="lk-user-character-preview-avatar">
+                    <img src="./img/demo.jpg" />
+                </div>
+                <div class="lk-user-character-preview-info">
+                    <p> <span class="character-prev-name">Имя:</span> <span class="character-prev-name-value">Test name</span></p>
+                    <p> <span  class="character-prev-race">Расса:</span><span class="character-prev-race-value"></span> Test race</p>
+                    <p> <span class="character-prev-class">Класс:</span><span class="character-prev-class-value"></span> Test class</p>
+                    <p> <span class="character-prev-sex">Пол:</span> <span  class="character-prev-sex-value">Мужской</span></p>
+                    <p> <span class="character-prev-exp">Опыт:</span> <span class="character-prev-exp-value">251/1000</span></p>
+
+                </div>
+
                 <div class="lk-user-character-preview-stats">
-                    Имя: Test name
-                    Расса: Test race
-                    Класс: Test class
-                    Пол: Мужской
-                    Опыт: 251/1000
-                    Сила:10 +0
-                    Ловкость:10 +0
-                    Вынослиость:10 +0
-                    Интелект:10 +0
-                    Мудрость:10 +0
-                    Харизма:10 +0
+                    <p> <span  class="character-prev-str">Сила: </span><span class="character-prev-str-value">10 +0</span> </p>
+                    <p> <span  class="character-prev-dex">Ловкость: </span><span class="character-prev-dex-value">10 +0</span> </p>
+                    <p> <span  class="character-prev-con">Вынослиость: </span><span class="character-prev-con-value">10 +0</span> </p>
+                    <p> <span  class="character-prev-int">Интелект: </span><span class="character-prev-int-value">10 +0</span> </p>
+                    <p> <span  class="character-prev-wis">Мудрость: </span><span class="character-prev-str-wis">10 +0</span> </p>
+                    <p> <span  class="character-prev-char">Харизма: </span><span class="character-prev-str-char">10 +0</span> </p>
                 </div>
 
             </div>
